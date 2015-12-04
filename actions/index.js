@@ -1,3 +1,4 @@
+import * as types from '../constants/ActionTypes'
 import { CALL_API, Schemas } from '../middleware/api'
 
 export const USER_REQUEST = 'USER_REQUEST'
