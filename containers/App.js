@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { pushState } from 'redux-router'
 import Explore from '../components/Explore'
+import Header from '../components/Header'
 import { resetErrorMessage } from '../actions'
 
 class App extends Component {
@@ -42,6 +43,7 @@ class App extends Component {
     const { children, inputValue } = this.props
     return (
       <div>
+        <Header/>
         <Explore value={inputValue}
                  onChange={this.handleChange} />
         <hr />
