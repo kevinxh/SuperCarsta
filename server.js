@@ -7,6 +7,8 @@ var express = require('express')
 var app = express()
 var port = 3000
 
+app.use(express.static('./assets'))
+
 var compiler = webpack(config)
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }))
 app.use(webpackHotMiddleware(compiler))
@@ -14,8 +16,6 @@ app.use(webpackHotMiddleware(compiler))
 app.use(function(req, res) {
   res.sendFile(__dirname + '/index.html')
 })
-
-app.use(express.static('./assets'))
 
 app.listen(port, function(error) {
   if (error) {
