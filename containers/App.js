@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { pushState } from 'redux-router'
 import Explore from '../components/Explore'
 import Header from '../components/Header'
+import Landing from '../components/Landing'
+import BrandTable from '../components/BrandTable'
 import { resetErrorMessage } from '../actions'
 
 class App extends Component {
@@ -44,11 +46,21 @@ class App extends Component {
     return (
       <div>
         <Header/>
+          <section id="content">
+
+            <div className="content-wrap">
+
+              <div className="container clearfix">
+                <Landing/>
+                <BrandTable/>
         <Explore value={inputValue}
                  onChange={this.handleChange} />
         <hr />
         {this.renderErrorMessage()}
         {children}
+      </div>
+      </div>
+    </section>
       </div>
     )
   }

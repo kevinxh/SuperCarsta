@@ -14,8 +14,8 @@
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/simpletextrotator.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -25,6 +25,8 @@
 	============================================= -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+
 
 	<!-- Document Title
 	============================================= -->
@@ -37,6 +39,15 @@
 				</div>
     	</div>
 		<script type="text/javascript" src="js/functions.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(e) {
+			$(".rotate").textrotator({
+				animation: "fade",
+				separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+				speed: 1500 // How many milliseconds until the next word show.
+			});
+		});
+		</script>
     <script src="/static/bundle.js"></script>
   </body>
 </html>
