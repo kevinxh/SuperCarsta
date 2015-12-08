@@ -17,11 +17,11 @@ export default class Header extends Component {
   						<a href="index.html" className="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"/></a>
   					</div>
 
-  					<nav id="primary-menu" className="style-2">
+  					<nav id="primary-menu" className="style-4">
 
   						<ul>
-  							<li><a href="index.html"><div>Home</div></a></li>
-  							<li className="mega-menu current"><a href="#"><div>Automotive Brands</div></a>
+  							<li className="current"><a href="index.html"><div>Home</div></a></li>
+  							<li className="mega-menu"><a href="#"><div>Automotive Brands</div></a>
   								<div className="mega-menu-content style-2 col-4 clearfix">
   									<ul>
   										<li className="mega-menu-title"><a href="#"><div>Introduction</div></a>
