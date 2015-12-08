@@ -24,16 +24,16 @@ export default class Header extends Component {
   							<li className="mega-menu"><a href="#"><div>Automotive Brands</div></a>
   								<div className="mega-menu-content style-2 col-4 clearfix">
   									<ul>
-  										<li className="mega-menu-title"><a href="#"><div>Introduction</div></a>
+  										<li className="mega-menu-title"><a href="#"><div>Europe</div></a>
   											<ul>
-  												<li><a href="about.html"><div>About Us</div></a></li>
-  												<li><a href="about-2.html"><div>About Us - Layout 2</div></a></li>
-  												<li><a href="about-me.html"><div>About Me</div></a></li>
-  												<li><a href="team.html"><div>Team Members</div></a></li>
-  												<li><a href="jobs.html"><div>Careers</div></a></li>
-  												<li><a href="side-navigation.html"><div>Side Navigation</div></a></li>
-  												<li><a href="page-submenu.html"><div>Page Submenu</div></a></li>
-  												<li><a href="sitemap.html"><div>Sitemap</div></a></li>
+  												<li><a href="about-2.html"><div>Aston Martin</div></a></li>
+  												<li><a href="about-me.html"><div>Audi</div></a></li>
+  												<li><a href="team.html"><div>Bentley</div></a></li>
+  												<li><a href="jobs.html"><div>BMW</div></a></li>
+  												<li><a href="side-navigation.html"><div>Bugatti</div></a></li>
+  												<li><a href="page-submenu.html"><div>Ferrari</div></a></li>
+  												<li><a href="sitemap.html"><div>Lamborghini</div></a></li>
+                          <li><a href="about.html"><div>Porsche</div></a></li>
   											</ul>
   										</li>
   									</ul>

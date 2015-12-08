@@ -1109,7 +1109,7 @@ var SEMICOLON = SEMICOLON || {};
 		},
 
 		removeStickyness: function(){
-			if( true ){ //$header.hasClass('sticky-header') fixing issue
+			if( $header.hasClass('sticky-header') ){
 				$('body:not(.side-header) #header:not(.no-sticky)').removeClass('sticky-header');
 				$header.removeClass().addClass(oldHeaderClasses);
 				$headerWrap.removeClass().addClass(oldHeaderWrapClasses);
