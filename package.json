@@ -1,5 +1,5 @@
 {
-  "name": "carstagram",
+  "name": "SuperCarsta",
   "version": "0.0.0",
   "description": "A web app for viewing car photos using Instagram API.",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kevinxh/carstagram.git"
+    "url": "https://github.com/kevinxh/SuperCarsta.git"
   },
   "license": "MIT",
   "homepage": "http://github.com/kevinxh/carstagram",
