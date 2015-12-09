@@ -1,26 +1,14 @@
 import React, { Component, PropTypes } from 'react'
+import Brands from './Brands'
+import {BrandList} from '../constants/BrandList'
 
 export default class BrandTable extends Component {
   render() {
     return (
-      <ul className="clients-grid grid-4 nobottommargin clearfix">
-        <li><a href="#"><img src="images/clients/1.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/2.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/3.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/4.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/5.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/6.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/7.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/8.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/1.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/2.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/3.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/4.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/5.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/6.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/7.png" alt="Clients"/></a></li>
-        <li><a href="#"><img src="images/clients/8.png" alt="Clients"/></a></li>
-        <li className="visible-xs"><a href="#"><img src="images/clients/9.png" alt="Clients"/></a></li>
+      <ul className="clients-grid grid-5 nobottommargin clearfix">
+        {BrandList.map((brand,i) =>
+          <Brands name={brand.name} link="#" logo={brand.logo} key={i}/>
+      )}
       </ul>
     )
   }

@@ -9319,7 +9319,7 @@ body:not(.device-touch) .clients-grid li a {
 .clients-grid li a,
 .clients-grid li img {
 	display: block;
-	width: 75%;
+	width:75%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -10793,7 +10793,10 @@ label.error { display: none !important; }
 /* Heading Block - with Subtitle
 -----------------------------------------------------------------*/
 
-.heading-block { margin-bottom: 50px; }
+.heading-block {
+	margin-bottom: 150px;
+	margin-top: 100px;
+}
 
 .heading-block h1,
 .heading-block h2,
