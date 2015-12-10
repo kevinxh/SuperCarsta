@@ -13,14 +13,14 @@ export default class Header extends Component {
   					<div id="primary-menu-trigger"><i className="icon-reorder"></i></div>
 
   					<div id="logo">
-  						<a href="index.html" className="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"/></a>
-  						<a href="index.html" className="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"/></a>
+  						<a href="/" className="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"/></a>
+  						<a href="/" className="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"/></a>
   					</div>
 
   					<nav id="primary-menu" className="style-4">
 
   						<ul>
-  							<li className="current"><a href="index.html"><div>Home</div></a></li>
+  							<li className="current"><a href="/"><div>Home</div></a></li>
   							<li className="mega-menu"><a href="#"><div>Automotive Brands</div></a>
   								<div className="mega-menu-content style-2 col-4 clearfix">
   									<ul>

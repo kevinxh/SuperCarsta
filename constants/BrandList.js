@@ -27,7 +27,41 @@ export const BrandList = [
         {
           "name": "BMW",
           "country": "German",
-          "logo": "images/brands/bmw.png"
+          "logo": "images/brands/bmw.png",
+          "models":[
+            {
+              "name": "M2",
+              "pic": "unknow"
+            },
+            {
+              "name": "M3",
+              "pic": "unknow"
+            },
+            {
+              "name": "M4",
+              "pic": "unknow"
+            },
+            {
+              "name": "M5",
+              "pic": "unknow"
+            },
+            {
+              "name": "M6",
+              "pic": "unknow"
+            },
+            {
+              "name": "X5M",
+              "pic": "unknow"
+            },
+            {
+              "name": "X6M",
+              "pic": "unknow"
+            },
+            {
+              "name": "i8",
+              "pic": "unknow"
+            }
+          ]
         },
         {
           "name": "Bugatti",

@@ -3,64 +3,22 @@ import { connect } from 'react-redux'
 import { pushState } from 'redux-router'
 import Explore from '../components/Explore'
 import Header from '../components/Header'
-import Landing from '../components/Landing'
-import BrandTable from '../components/BrandTable'
 import { resetErrorMessage } from '../actions'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.handleChange = this.handleChange.bind(this)
-    this.handleDismissClick = this.handleDismissClick.bind(this)
-  }
-
-  handleDismissClick(e) {
-    this.props.resetErrorMessage()
-    e.preventDefault()
-  }
-
-  handleChange(nextValue) {
-    this.props.pushState(null, `/${nextValue}`)
-  }
-
-  renderErrorMessage() {
-    const { errorMessage } = this.props
-    if (!errorMessage) {
-      return null
-    }
-
-    return (
-      <p style={{ backgroundColor: '#e99', padding: 10 }}>
-        <b>{errorMessage}</b>
-        {' '}
-        (<a href="#"
-            onClick={this.handleDismissClick}>
-          Dismiss
-        </a>)
-      </p>
-    )
-  }
 
   render() {
     const { children, inputValue } = this.props
     return (
       <div>
         <Header/>
-          <section id="content">
-
-            <div className="content-wrap">
-
-              <div className="container clearfix">
-                <Landing/>
-                <BrandTable/>
-        <Explore value={inputValue}
-                 onChange={this.handleChange} />
-        <hr />
-        {this.renderErrorMessage()}
-        {children}
-      </div>
-      </div>
-    </section>
+        <section id="content">
+          <div className="content-wrap">
+            <div className="container clearfix">
+              {children}
+            </div>
+          </div>
+        </section>
       </div>
     )
   }
