@@ -2,27 +2,113 @@ export const BrandList = [
         {
           "name": "Acura",
           "country": "Japan",
-          "logo": "images/brands/acura.png"
+          "logo": "images/brands/acura.png",
+          "models":[
+            {
+              "name": "NSX",
+              "pic": "images/models/acura/nsx.jpg"
+            }
+          ]
         },
         {
           "name": "Alfa Romeo",
           "country": "Italy",
-          "logo": "images/brands/alfa_romeo.jpg"
+          "logo": "images/brands/alfa_romeo.jpg",
+          "models":[
+            {
+              "name": "Alpha Romeo 4c",
+              "pic": "images/models/alpha_romeo/alpha_romeo_4c.jpg"
+            }
+          ]
         },
         {
           "name": "Aston Martin",
           "country": "United Kingdom",
-          "logo": "images/brands/aston_martin.png"
+          "logo": "images/brands/aston_martin.png",
+          "models":[
+            {
+              "name": "Vantage",
+              "pic": "images/models/aston_martin/vantage.jpg"
+            },
+            {
+              "name": "DB9",
+              "pic": "images/models/aston_martin/Db9.jpg"
+            },
+            {
+              "name": "Vulcan",
+              "pic": "images/models/aston_martin/vulcan.jpg"
+            },
+            {
+              "name": "One-77",
+              "pic": "images/models/aston_martin/one-77.jpg"
+            },
+            {
+              "name": "Vanquish",
+              "pic": "images/models/aston_martin/vanquish.jpg"
+            },
+            {
+              "name": "Rapide",
+              "pic": "images/models/aston_martin/rapide.jpg"
+            }
+          ]
         },
         {
           "name": "Audi",
           "country": "German",
-          "logo": "images/brands/audi.png"
+          "logo": "images/brands/audi.png",
+          "models":[
+            {
+              "name": "S5",
+              "pic": "images/models/audi/s5.jpg"
+            },
+            {
+              "name": "S6",
+              "pic": "images/models/audi/s6.jpg"
+            },
+            {
+              "name": "RS7",
+              "pic": "images/models/audi/rs7.jpg"
+            },
+            {
+              "name": "TTS",
+              "pic": "images/models/audi/tts.jpg"
+            },
+            {
+              "name": "R8",
+              "pic": "images/models/audi/r8.jpg"
+            },
+            {
+              "name": "S8",
+              "pic": "images/models/audi/s8.jpg"
+            },
+            {
+              "name": "SQ5",
+              "pic": "images/models/audi/sq5.jpg"
+            }
+          ]
         },
         {
           "name": "Bentley",
           "country": "United Kingdom",
-          "logo": "images/brands/bentley.png"
+          "logo": "images/brands/bentley.png",
+          "models":[
+            {
+              "name": "Continental",
+              "pic": "images/models/bentley/continental.jpg"
+            },
+            {
+              "name": "Mulsanne",
+              "pic": "images/models/bentley/mulsanne.jpg"
+            },
+            {
+              "name": "Bentayga",
+              "pic": "images/models/bentley/bentayga.jpg"
+            },
+            {
+              "name": "Flying Spur",
+              "pic": "images/models/bentley/flying_spur.jpg"
+            }
+          ]
         },
         {
           "name": "BMW",
@@ -66,17 +152,39 @@ export const BrandList = [
         {
           "name": "Bugatti",
           "country": "France",
-          "logo": "images/brands/bugatti.png"
+          "logo": "images/brands/bugatti.png",
+          "models":[
+            {
+              "name": "Veyron",
+              "pic": "images/models/bugatti/veyron.jpg"
+            },
+          ]
         },
         {
           "name": "Cadillac",
           "country": "United States",
-          "logo": "images/brands/cadillac.jpg"
+          "logo": "images/brands/cadillac.jpg",
+          "models":[
+            {
+              "name": "ATS V",
+              "pic": "images/models/cadillac/ats-v.jpg"
+            },
+            {
+              "name": "Elmiraj",
+              "pic": "images/models/cadillac/elmiraj.jpg"
+            }
+          ]
         },
         {
-          "name": "Corvette",
+          "name": "Chevrolet",
           "country": "United States",
-          "logo": "images/brands/corvette.jpg"
+          "logo": "images/brands/chevrolet.jpg",
+          "models":[
+            {
+              "name": "Corvette",
+              "pic": "images/models/chevrolet/corvette.jpg"
+            }
+          ]
         },
         {
           "name": "Ferrari",
