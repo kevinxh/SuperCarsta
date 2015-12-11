@@ -1,6 +1,25 @@
 import React, { Component, PropTypes } from 'react'
 
 export default class Header extends Component {
+
+  componentDidMount() {
+    this.refreshTextRotator()
+  }
+
+  componentDidUpdate() {
+    this.refreshTextRotator()
+  }
+
+  refreshTextRotator() {
+    $(document).ready(function(e) {
+      $(".rotate").textrotator({
+        animation: "fade",
+        separator: ",",
+        speed: 1500
+      });
+    });
+  }
+
   render() {
 
     return (

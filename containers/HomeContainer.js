@@ -8,10 +8,7 @@ export default class HomeContainer extends Component {
     super(props)
 
   }
-
-  componentWillMount() {
-
-  }
+  componentWillMount() {}
 
   componentWillReceiveProps(nextProps) {
 
