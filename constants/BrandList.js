@@ -31,35 +31,35 @@ export const BrandList = [
           "models":[
             {
               "name": "M2",
-              "pic": "unknow"
+              "pic": "images/models/bmw/m2.jpg"
             },
             {
               "name": "M3",
-              "pic": "unknow"
+              "pic": "images/models/bmw/m3.jpg"
             },
             {
               "name": "M4",
-              "pic": "unknow"
+              "pic": "images/models/bmw/m4.jpg"
             },
             {
               "name": "M5",
-              "pic": "unknow"
+              "pic": "images/models/bmw/m5.jpg"
             },
             {
               "name": "M6",
-              "pic": "unknow"
+              "pic": "images/models/bmw/m6.jpg"
             },
             {
               "name": "X5M",
-              "pic": "unknow"
+              "pic": "images/models/bmw/x5m.jpg"
             },
             {
               "name": "X6M",
-              "pic": "unknow"
+              "pic": "images/models/bmw/x6m.jpg"
             },
             {
               "name": "i8",
-              "pic": "unknow"
+              "pic": "images/models/bmw/i8.jpg"
             }
           ]
         },

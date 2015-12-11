@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import Brands from './Brands'
+import Models from './Models'
 import {BrandList} from '../constants/BrandList'
 
 export default class ModelTable extends Component {
@@ -7,24 +7,18 @@ export default class ModelTable extends Component {
     super(props)
   }
 
-  renderModels() {
-    const { brand } = this.props
-    BrandList.map((item,i) => {
-      if(item.name == brand){
-        return(
-          <h1>heihei your name is {item.name}!</h1>
-        )
-      }}
-    )
-  }
-
   render() {
     const { brand } = this.props
-    console.log(this.renderModels())
     return (
-      <div>
-        {this.renderModels()}
-      </div>
+      <ul className="clients-grid grid-4 nobottommargin clearfix">
+        {
+          (BrandList.find(item => item.name === brand)).models.map((model,i) => {
+            return (
+              <Models brand={brand} name={model.name} pic={model.pic} key={i}/>
+            )
+          })
+        }
+      </ul>
     )
   }
 }

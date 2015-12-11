@@ -9319,7 +9319,7 @@ body:not(.device-touch) .clients-grid li a {
 .clients-grid li a,
 .clients-grid li img {
 	display: block;
-	width:75%;
+	width:80%;
 	margin-left: auto;
 	margin-right: auto;
 }
