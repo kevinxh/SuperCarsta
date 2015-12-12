@@ -1,0 +1,12 @@
+.fullwidth{
+	width : 100%;
+}
+
+.Button-center{
+	width:120px;
+	padding-top: 30px;
+	position: relative !important;
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}

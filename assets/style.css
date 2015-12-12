@@ -72,6 +72,7 @@ img { max-width: 100%; }
 iframe { border: none !important; }
 
 
+
 /* ----------------------------------------------------------------
 	Basic Layout Styles
 -----------------------------------------------------------------*/
@@ -7042,7 +7043,7 @@ body:not(.device-touch) .button.button-full strong {
 .button-3d.button-pink:hover,
 .button-reveal.button-pink:hover { background-color: #F89FA1 !important; }
 
-.button-dirtygreen { background-color: #1693A5; }
+.button-dirtygreen { background-color: #1693A5 !important; }
 .button-3d.button-dirtygreen:hover,
 .button-reveal.button-dirtygreen:hover { background-color: #1693A5 !important; }
 
@@ -10794,8 +10795,8 @@ label.error { display: none !important; }
 -----------------------------------------------------------------*/
 
 .heading-block {
-	margin-bottom: 150px;
-	margin-top: 100px;
+	margin-bottom: 75px;
+	margin-top: 75px;
 }
 
 .heading-block h1,
