@@ -189,42 +189,138 @@ export const BrandList = [
         {
           "name": "Ferrari",
           "country": "Italy",
-          "logo": "images/brands/ferrari.jpg"
+          "logo": "images/brands/ferrari.jpg",
+          "models":[
+            {
+              "name": "458",
+              "pic": "images/models/ferrari/458.jpg"
+            },
+            {
+              "name": "488",
+              "pic": "images/models/ferrari/488.jpg"
+            },
+            {
+              "name": "F430",
+              "pic": "images/models/ferrari/f430.jpg"
+            },
+            {
+              "name": "California",
+              "pic": "images/models/ferrari/california.jpg"
+            },
+            {
+              "name": "FF",
+              "pic": "images/models/ferrari/ff.jpg"
+            },
+            {
+              "name": "599",
+              "pic": "images/models/ferrari/599.jpg"
+            },
+            {
+              "name": "F12 Berlinetta",
+              "pic": "images/models/ferrari/f12-berlinetta.jpg"
+            },
+            {
+              "name": "LaFerrari",
+              "pic": "images/models/ferrari/laferrari.jpg"
+            }
+          ]
         },
         {
           "name": "Ford",
           "country": "United States",
-          "logo": "images/brands/ford.jpg"
+          "logo": "images/brands/ford.jpg",
+          "models":[
+            {
+              "name": "GT",
+              "pic": "images/models/ford/gt.jpg"
+            },
+            {
+              "name": "Mustang",
+              "pic": "images/models/ford/mustang.jpg"
+            },
+            {
+              "name": "Mustang Shelby",
+              "pic": "images/models/ford/mustang-shelby.jpg"
+            }
+          ]
         },
         {
           "name": "Honda",
           "country": "Japan",
-          "logo": "images/brands/honda.jpg"
+          "logo": "images/brands/honda.jpg",
+          "models":[
+            {
+              "name": "Civic Type-R",
+              "pic": "images/models/honda/civic-type-r.jpg"
+            },
+            {
+              "name": "S2000",
+              "pic": "images/models/honda/s2000.jpg"
+            }
+          ]
         },
         {
           "name": "Hyundai",
           "country": "Korea",
-          "logo": "images/brands/hyundai.png"
+          "logo": "images/brands/hyundai.png",
+          "models":[
+            {
+              "name": "Genesis Coupe",
+              "pic": "images/models/hyundai/genesis.jpg"
+            }
+          ]
         },
         {
           "name": "Infiniti",
           "country": "Japan",
-          "logo": "images/brands/infiniti.jpg"
+          "logo": "images/brands/infiniti.jpg",
+          "models":[
+            {
+              "name": "Q60 (G37)",
+              "pic": "images/models/infiniti/q60.jpg"
+            }
+          ]
         },
         {
           "name": "Jaguar",
           "country": "United Kingdom",
-          "logo": "images/brands/jaguar.jpg"
+          "logo": "images/brands/jaguar.jpg",
+          "models":[
+            {
+              "name": "F-TYPE",
+              "pic": "images/models/jaguar/f-type.jpg"
+            }
+          ]
         },
         {
           "name": "Jeep",
           "country": "United States",
-          "logo": "images/brands/jeep.png"
+          "logo": "images/brands/jeep.png",
+          "models":[
+            {
+              "name": "Grand Cherokee SRT",
+              "pic": "images/models/jeep/grand-cherokee-srt.jpg"
+            }
+          ]
         },
         {
           "name": "Koenigsegg",
           "country": "Sweden",
-          "logo": "images/brands/koenigsegg.jpg"
+          "logo": "images/brands/koenigsegg.jpg",
+          "models":[
+            {
+              "name": "Agera R",
+              "pic": "images/models/koenigsegg/agera-r.jpg"
+            },
+            {
+              "name": "One 1",
+              "pic": "images/models/koenigsegg/one-1.jpg"
+            },
+            {
+              "name": "Regera",
+              "pic": "images/models/koenigsegg/regera.jpg"
+            }
+          ]
         },
         {
           "name": "Lamborghini",
