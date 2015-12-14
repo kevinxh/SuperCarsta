@@ -11,18 +11,18 @@ export const BrandList = [
           ]
         },
         {
-          "name": "Alfa Romeo",
+          "name": "Alfa_Romeo",
           "country": "Italy",
           "logo": "images/brands/alfa_romeo.jpg",
           "models":[
             {
-              "name": "Alpha Romeo 4c",
-              "pic": "images/models/alpha_romeo/alpha_romeo_4c.jpg"
+              "name": "Alfa Romeo 4c",
+              "pic": "images/models/alfa_romeo/alfa_romeo_4c.jpg"
             }
           ]
         },
         {
-          "name": "Aston Martin",
+          "name": "Aston_Martin",
           "country": "United Kingdom",
           "logo": "images/brands/aston_martin.png",
           "models":[
@@ -325,7 +325,29 @@ export const BrandList = [
         {
           "name": "Lamborghini",
           "country": "Italy",
-          "logo": "images/brands/lamborghini.png"
+          "logo": "images/brands/lamborghini.png",
+          "models":[
+            {
+              "name": "Aventador",
+              "pic": "images/models/lamborghini/aventador.jpg"
+            },
+            {
+              "name": "Huracan",
+              "pic": "images/models/lamborghini/huracan.jpg"
+            },
+            {
+              "name": "Reventon",
+              "pic": "images/models/lamborghini/reventon.jpg"
+            },
+            {
+              "name": "Gallardo",
+              "pic": "images/models/lamborghini/gallardo.jpg"
+            },
+            {
+              "name": "Veneno",
+              "pic": "images/models/lamborghini/veneno.jpg"
+            }
+          ]
         },
         {
           "name": "Land Rover",
