@@ -1,19 +1,16 @@
 {
-  "name": "redux-real-world-example",
+  "name": "carstagram",
   "version": "0.0.0",
-  "description": "Redux real-world example",
+  "description": "A web app for viewing car photos using Instagram API.",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rackt/redux.git"
+    "url": "https://github.com/kevinxh/carstagram.git"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rackt/redux/issues"
-  },
-  "homepage": "http://rackt.github.io/redux",
+  "homepage": "http://github.com/kevinxh/carstagram",
   "dependencies": {
     "history": "^1.9.0",
     "humps": "^0.6.0",
