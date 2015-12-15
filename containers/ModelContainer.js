@@ -9,9 +9,6 @@ export default class ModelContainer extends Component {
     super(props)
   }
 
-  componentWillMount() {
-
-  }
 
   componentWillReceiveProps(nextProps) {
 
@@ -35,7 +32,7 @@ ModelContainer.propTypes = {
 
 function mapStateToProps(state) {
   return {
-    brand: state.router.location.pathname.substring(1)
+    brand: state.router.params.brand
   }
 }
 
