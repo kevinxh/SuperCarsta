@@ -352,12 +352,52 @@ export const BrandList = [
         {
           "name": "Land Rover",
           "country": "United Kingdom",
-          "logo": "images/brands/land_rover.png"
+          "logo": "images/brands/land_rover.png",
+          "models":[
+            {
+              "name": "Range Rover",
+              "pic": "images/models/land_rover/range_rover.jpg"
+            },
+            {
+              "name": "Evoque",
+              "pic": "images/models/land_rover/evoque.jpg"
+            },
+            {
+              "name": "LR4",
+              "pic": "images/models/land_rover/lr4.jpg"
+            },
+            {
+              "name": "Discovery",
+              "pic": "images/models/land_rover/discovery.jpg"
+            }
+          ]
         },
         {
           "name": "Lexus",
           "country": "Japan",
-          "logo": "images/brands/lexus.png"
+          "logo": "images/brands/lexus.png",
+          "models":[
+            {
+              "name": "LFA",
+              "pic": "images/models/lexus/lfa.jpg"
+            },
+            {
+              "name": "GS F",
+              "pic": "images/models/lexus/gs_f.jpg"
+            },
+            {
+              "name": "RC F",
+              "pic": "images/models/lexus/rc_f.jpg"
+            },
+            {
+              "name": "IS F",
+              "pic": "images/models/lexus/is_f.jpg"
+            },
+            {
+              "name": "LF LC",
+              "pic": "images/models/lexus/lf_lc.jpg"
+            }
+          ]
         },
         {
           "name": "Lotus",
