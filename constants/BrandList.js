@@ -402,7 +402,12 @@ export const BrandList = [
         {
           "name": "Lotus",
           "country": "United Kingdom",
-          "logo": "images/brands/lotus.jpg"
+          "logo": "images/brands/lotus.jpg",
+          "models":[
+            {
+              "name": "unknow",
+              "pic": "images/models/lotus/unknown.jpg"
+            }
         },
         {
           "name": "Maserati",
