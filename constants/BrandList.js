@@ -405,9 +405,22 @@ export const BrandList = [
           "logo": "images/brands/lotus.jpg",
           "models":[
             {
-              "name": "unknow",
-              "pic": "images/models/lotus/unknown.jpg"
+              "name": "Elise",
+              "pic": "images/models/lotus/elise.jpg"
+            },
+            {
+              "name": "Exige",
+              "pic": "images/models/lotus/exige.jpg"
+            },
+            {
+              "name": "Evora",
+              "pic": "images/models/lotus/evora.jpg"
+            },
+            {
+              "name": "3Eleven",
+              "pic": "images/models/lotus/3eleven.jpg"
             }
+          ]
         },
         {
           "name": "Maserati",
