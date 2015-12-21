@@ -425,7 +425,29 @@ export const BrandList = [
         {
           "name": "Maserati",
           "country": "Italy",
-          "logo": "images/brands/maserati.png"
+          "logo": "images/brands/maserati.png",
+          "models":[
+            {
+              "name": "Ghibli",
+              "pic": "images/models/maserati/ghibli.jpg"
+            },
+            {
+              "name": "GranTurismo",
+              "pic": "images/models/maserati/granturismo.jpg"
+            },
+            {
+              "name": "GranCabrio",
+              "pic": "images/models/maserati/grancabrio.jpg"
+            },
+            {
+              "name": "Quattroporte",
+              "pic": "images/models/maserati/quattroporte.jpg"
+            },
+            {
+              "name": "MC12",
+              "pic": "images/models/maserati/mc12.jpg"
+            }
+          ]
         },
         {
           "name": "Maybach",
