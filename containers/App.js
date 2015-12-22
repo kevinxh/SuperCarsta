@@ -1,14 +1,13 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { pushState } from 'redux-router'
-import Explore from '../components/Explore'
 import Header from '../components/Header'
 import { resetErrorMessage } from '../actions'
 
 class App extends Component {
 
   render() {
-    const { children, inputValue } = this.props
+    const { children } = this.props
     return (
       <div>
         <Header/>
@@ -29,7 +28,6 @@ App.propTypes = {
   errorMessage: PropTypes.string,
   resetErrorMessage: PropTypes.func.isRequired,
   pushState: PropTypes.func.isRequired,
-  inputValue: PropTypes.string.isRequired,
   // Injected by React Router
   children: PropTypes.node
 }
@@ -37,7 +35,6 @@ App.propTypes = {
 function mapStateToProps(state) {
   return {
     errorMessage: state.errorMessage,
-    inputValue: state.router.location.pathname.substring(1)
   }
 }
 
