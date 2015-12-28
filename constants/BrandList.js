@@ -452,7 +452,13 @@ export const BrandList = [
         {
           "name": "Maybach",
           "country": "German",
-          "logo": "images/brands/maybach.png"
+          "logo": "images/brands/maybach.png",
+          "models":[
+            {
+              "name": "Mercedes-Maybach S600",
+              "pic": "images/models/maybach/mercedes_maybach_s600.jpg"
+            }
+          ]
         },
         {
           "name": "Mazda",
