@@ -245,43 +245,6 @@ export const BrandList = [
           ]
         },
         {
-          "name": "Honda",
-          "country": "Japan",
-          "logo": "images/brands/honda.jpg",
-          "models":[
-            {
-              "name": "Civic Type-R",
-              "pic": "images/models/honda/civic-type-r.jpg"
-            },
-            {
-              "name": "S2000",
-              "pic": "images/models/honda/s2000.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Hyundai",
-          "country": "Korea",
-          "logo": "images/brands/hyundai.png",
-          "models":[
-            {
-              "name": "Genesis Coupe",
-              "pic": "images/models/hyundai/genesis.jpg"
-            }
-          ]
-        },
-        {
-          "name": "Infiniti",
-          "country": "Japan",
-          "logo": "images/brands/infiniti.jpg",
-          "models":[
-            {
-              "name": "Q60 (G37)",
-              "pic": "images/models/infiniti/q60.jpg"
-            }
-          ]
-        },
-        {
           "name": "Jaguar",
           "country": "United Kingdom",
           "logo": "images/brands/jaguar.jpg",
@@ -461,11 +424,6 @@ export const BrandList = [
           ]
         },
         {
-          "name": "Mazda",
-          "country": "Japan",
-          "logo": "images/brands/mazda.jpg"
-        },
-        {
           "name": "McLaren",
           "country": "United Kingdom",
           "logo": "images/brands/mclaren.jpg"
@@ -499,11 +457,6 @@ export const BrandList = [
           "name": "Rolls-Royce",
           "country": "United Kingdom",
           "logo": "images/brands/rolls_royce.jpg"
-        },
-        {
-          "name": "Scion",
-          "country": "United States",
-          "logo": "images/brands/scion.jpg"
         },
         {
           "name": "Subaru",
