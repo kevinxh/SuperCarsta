@@ -5,7 +5,7 @@ var config = require('./webpack.config')
 var express = require('express')
 
 var app = express()
-var port = 3000
+var port = 80
 
 app.use(express.static('./assets'))
 
