@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "A web app for viewing car photos using Instagram API.",
   "scripts": {
-    "start": "set NODE_ENV=production&& node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
