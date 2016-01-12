@@ -4,9 +4,12 @@ var webpackHotMiddleware = require('webpack-hot-middleware')
 var config = require('./webpack.config')
 var express = require('express')
 var request = require('request')
+var bodyParser = require('body-parser')
 
 var app = express()
 var port = 80
+
+app.use(bodyParser.json())
 
 app.get('/callback',function(req, res){
 
@@ -14,20 +17,23 @@ app.get('/callback',function(req, res){
 
 	var callbackReq = {
 		method: 'post',
-		body:'client_id=90ba6e4257404b0e87e28d9297d6ad93&client_secret=236275c7dce24640b986e4f7ed8f0fe5&grant_type=authorization_code&redirect_uri=http://www.supercarsta.com&code=' + code,
+		body:'client_id=90ba6e4257404b0e87e28d9297d6ad93&client_secret=236275c7dce24640b986e4f7ed8f0fe5&grant_type=authorization_code&redirect_uri=http://www.supercarsta.com/callback&code=' + code,
 		url:'https://api.instagram.com/oauth/access_token'
 	}
 
-	request(callbackReq, function (err, res, body) {
+	var data = request(callbackReq, function (err, res, body) {
   		if (err) {
     		console.log('Error :' ,err)
     		return
   		}     
-  		console.log(' Body :',body)
+  		console.log('RES :' ,res.body)
+  		return res.body
 	});
 
-	res.type('text/plain')
-	res.send(code)
+	console.log('DATA :' ,data)
+
+	res.type('html')
+	res.send(data)
 })
 
 app.use(express.static('./assets'))
