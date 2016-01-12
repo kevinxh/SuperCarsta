@@ -9,7 +9,7 @@ var port = 80
 
 app.get('/callback',function(req, res){
 	res.type('text/plain')
-	res.send('test callback')
+	res.send(req.query.code)
 })
 
 app.use(express.static('./assets'))
@@ -29,3 +29,6 @@ app.listen(port, function(error) {
     console.info("==> 🌎  Listening on port %s. Open up http://localhost:%s/ in your browser.", port, port)
   }
 })
+
+
+//https://api.instagram.com/oauth/authorize/?client_id=90ba6e4257404b0e87e28d9297d6ad93&redirect_uri=http://www.supercarsta.com/callback&response_type=code
