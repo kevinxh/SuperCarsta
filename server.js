@@ -7,6 +7,11 @@ var express = require('express')
 var app = express()
 var port = 80
 
+app.get('/callback',function(req, res){
+	res.type('text/plain')
+	res.send('test callback')
+})
+
 app.use(express.static('./assets'))
 
 var compiler = webpack(config)

@@ -426,7 +426,13 @@ export const BrandList = [
         {
           "name": "McLaren",
           "country": "United Kingdom",
-          "logo": "images/brands/mclaren.jpg"
+          "logo": "images/brands/mclaren.jpg",
+          "models":[
+            {
+              "name": "McLaren P1",
+              "pic": "images/models/mclaren/mclaren_p1.jpg"
+            }
+          ]
         },
         {
           "name": "Mercedes-Benz",
