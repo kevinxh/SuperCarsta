@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "A web app for viewing car photos using Instagram API.",
   "scripts": {
-    "start": "node server.js"
+    "start": "node supercarsta.js"
   },
   "repository": {
     "type": "git",
@@ -13,10 +13,13 @@
   "homepage": "http://github.com/kevinxh/carstagram",
   "dependencies": {
     "body-parser": "^1.14.2",
+    "compression": "^1.6.0",
     "history": "^1.9.0",
     "humps": "^0.6.0",
     "isomorphic-fetch": "^2.1.1",
     "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
     "normalizr": "^1.0.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
