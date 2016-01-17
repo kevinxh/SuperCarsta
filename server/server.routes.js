@@ -3,6 +3,9 @@ var request = require('request');
 
 module.exports = function() {
   var router = express.Router();
+  var index = require('./controllers/indexController');
+
+  router.get('/',index.render);
 
   router.get('/callback',function(req, res){
     var code = req.query.code;
