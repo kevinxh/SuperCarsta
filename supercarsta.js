@@ -1,7 +1,9 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-var express = require('./server/config/express')
+var express = require('./server/config/express'),
+	passport = require('passport');
 
 var app = express()
+
 var port = 80
 
 app.listen(port, function(error) {

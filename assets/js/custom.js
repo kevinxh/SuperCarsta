@@ -4,4 +4,5 @@ $(document).ready(function(e) {
         separator: ",",
         speed: 1500
       });
+
 });
