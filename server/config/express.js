@@ -19,13 +19,13 @@ module.exports = function() {
     extended: true
   }));
   require('./env/development.js')(app);
+  app.use(router());
   app.use(express.static(path.join(__dirname, '../../assets')));
   app.use(function(req, res){
     res.sendFile(path.join(__dirname, '../../', 'index.html'));
   });
   app.use(bodyParser.json());
   app.use(methodOverride());
-  app.use(router);
   
   return app;
 };

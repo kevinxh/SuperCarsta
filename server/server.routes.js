@@ -12,20 +12,15 @@ module.exports = function() {
       url:'https://api.instagram.com/oauth/access_token'
     };
 
-    var data = request(callbackReq, function (err, res, body) {
+    request(callbackReq, function (err, result) {
         if (err) {
-          console.log('Error :' ,err)
+          console.log('Error :' ,err);
           return
         }
-        console.log('RES :' ,res.body)
-        return res.body
+        res.type('json');
+        res.send(result.body);
+        return;
     });
-
-    console.log('DATA :' ,data)
-
-    res.type('html')
-    res.send(data)
   });
-
   return router;
 };
