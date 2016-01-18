@@ -6646,7 +6646,6 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	cursor: pointer;
 	outline: none;
 	white-space: nowrap;
-	margin: 5px;
 	padding: 0 22px;
 	font-size: 14px;
 	height: 40px;
