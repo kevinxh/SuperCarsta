@@ -26,15 +26,15 @@ module.exports = function() {
     extended: true
   }));
   require('./env/development.js')(app);
-   app.use(express.static(path.join(__dirname, '../../assets')));
+  app.use(express.static(path.join(__dirname, '../../assets')));
   
-  app.use(router());
-
   app.use(passport.initialize());
   app.use(passport.session());
- 
+
   app.use(bodyParser.json());
   app.use(methodOverride());
+
+  app.use(router());
   
   app.set('views', path.join(__dirname, '../views'));
   app.set('view engine', 'ejs');

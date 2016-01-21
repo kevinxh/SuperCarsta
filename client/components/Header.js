@@ -109,7 +109,7 @@ export default class Header extends Component {
                     <div className="modal-body">
                       <h4>Authentication Policy</h4>
                       <p>According to Instagram's API Authentication Policy, it is required to login with your Instagram account to start using this app. </p>
-                      <a href="https://api.instagram.com/oauth/authorize/?client_id=90ba6e4257404b0e87e28d9297d6ad93&redirect_uri=http://www.supercarsta.com/callback&response_type=code" className="button button-large button-dirtygreen btn-block center"><i className="icon-instagram"></i><span>Login with Instagram</span></a>
+                      <a href="http://www.supercarsta.com/oauth/instagram" className="button button-large button-dirtygreen btn-block center"><i className="icon-instagram"></i><span>Login with Instagram</span></a>
                     </div>
                   </div>
                 </div>

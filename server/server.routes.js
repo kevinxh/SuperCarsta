@@ -1,5 +1,6 @@
 var express = require('express');
 var request = require('request');
+var passport = require('passport');
 
 module.exports = function() {
   var router = express.Router();
@@ -7,7 +8,18 @@ module.exports = function() {
 
   router.get('/',index.render);
 
-  router.get('/callback',function(req, res){
+  router.get('/oauth/instagram', passport.authenticate('instagram'));
+
+  router.get('/callback', 
+  passport.authenticate('instagram', { failureRedirect: '/login' }),
+  function(req, res) {
+    // Successful authentication, redirect home.
+    console.log(JSON.stringify(req.user)+"~~~~~~~~~~~~~~~~~~user");
+    res.json(JSON.stringify(req.user));
+    //res.redirect('/');
+  });
+
+  /*router.get('/callback',function(req, res){
     console.log(req.session);
 
     var code = req.query.code;
@@ -26,6 +38,6 @@ module.exports = function() {
         res.send(result.body);
         return;
     });
-  });
+  });*/
   return router;
 };

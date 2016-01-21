@@ -1,7 +1,7 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var express = require('./server/config/express'),
 	mongoose = require('./server/config/mongoose'),
-	passport = require('./server/config/passport');
+	passport = require('./server/config/instagram');
 
 var db = mongoose();
 var app = express();
