@@ -8,6 +8,8 @@ module.exports = function() {
   router.get('/',index.render);
 
   router.get('/callback',function(req, res){
+    console.log(req.session);
+
     var code = req.query.code;
     var callbackReq = {
       method: 'post',
