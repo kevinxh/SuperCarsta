@@ -18,9 +18,14 @@ module.exports = function() {
 		callbackURL : 'http://www.supercarsta.com/callback'
 	},
 	function(accessToken, refreshToken, profile, done) {
+		console.log(profile._json.data,'!!!!!!!!!!!!!!!!!\n');
 		var userInfo = {
-			token: accessToken,
-			username:profile.username,
+			user_token: accessToken,
+			user_name:profile.username,
+			user_picture:profile._json.data.profile_picture,
+			user_id:profile._json.data.id,
+			user_bio:profile._json.data.bio,
+			user_counts:profile._json.data.counts
 		};
 		return done(null, userInfo);
 	}));

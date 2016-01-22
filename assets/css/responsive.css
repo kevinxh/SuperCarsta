@@ -2152,6 +2152,11 @@
 
 	.button.button-desc span { font-size: 11px; }
 
+	.logout_modal_user_info{
+		width:330px;
+		display: :inline-block;
+	}
+
 }
 
 

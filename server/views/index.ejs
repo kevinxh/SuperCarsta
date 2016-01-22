@@ -71,9 +71,13 @@
                     <div class="modal-body">
                       <div class="modal-content">
                         <div class="modal-body">
-                          <a href="/oauth/logout" class="button button-large button-dirtygreen btn-block center"><i class="icon-instagram"></i><span>Log out: 
-                          <%=user.username%>
-                          </span></a>
+                        	<div class="logout_modal_user_info">
+                        		<img class="img-circle alignleft" src="<%=user.user_picture%>" alt="<%=user.user_name%>">
+                        		<h2 class="uppercase font-secondary"><%=user.user_name%></h2>
+                        		<h5 class="font-secondary"><%=user.user_bio%></h5>
+                        	</div>
+                        	<hr>
+                          <a href="/oauth/logout" class="button button-large button-dirtygreen btn-block center"><i class="icon-instagram"></i><span>Log out</span></a>
                         </div>
                       </div>
                     </div>
