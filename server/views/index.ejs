@@ -39,9 +39,47 @@
       	<div id="wrapper" class="clearfix">
       		<div id='root'>
       			<%- include('./header') %>
-      			<%- include('./landing') %>
+      			<section id="content">
+	      			<div class="content-wrapper">
+	      				<div class="container clearfix">
+			      			<%- include('./landing') %>
+			      			<%- include('./factorys') %>
+		      			</div>
+	      			</div>
+      			</section>
+
 			</div>
+			<%- include('./footer') %>
     	</div>
+    	<%if(!user){%>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-body">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h4>Authentication Policy</h4>
+                          <p>According to Instagram's API Authentication Policy, it is required to login with your Instagram account to start using this app. </p>
+                          <a href="http://www.supercarsta.com/oauth/instagram" class="button button-large button-dirtygreen btn-block center"><i class="icon-instagram"></i><span>Login with Instagram</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <%}else{%>
+        		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-body">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <a href="/oauth/logout" class="button button-large button-dirtygreen btn-block center"><i class="icon-instagram"></i><span>Log out: 
+                          <%=user.username%>
+                          </span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <%}%>
 		<script type="text/javascript" src="js/functions.js"></script>
   	</body>
 </html>
