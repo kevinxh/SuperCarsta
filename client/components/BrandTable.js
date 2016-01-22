@@ -5,7 +5,6 @@ import {BrandList} from '../constants/BrandList'
 export default class BrandTable extends Component {
 
   handleClick(brand) {
-      this.props.chooseBrand(brand)
   }
 
   render() {
@@ -24,5 +23,4 @@ export default class BrandTable extends Component {
 }
 
 BrandTable.propTypes = {
-  chooseBrand: PropTypes.func.isRequired
 }

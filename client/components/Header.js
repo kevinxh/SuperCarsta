@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import 'isomorphic-fetch'
 
 export default class Header extends Component {
 
@@ -17,6 +18,20 @@ export default class Header extends Component {
         separator: ",",
         speed: 1500
       });
+    });
+  }
+
+  handleClick(){
+  	fetch('http://www.supercarsta.com/oauth/instagram',{
+  		mode: 'no-cors',
+  		method:"GET"
+  	})
+    .then(function(response) {
+        if (response.status >= 400) {
+            throw new Error("Bad response from server");
+        }
+        console.log(response);
+        return response.json();
     });
   }
 
@@ -109,7 +124,7 @@ export default class Header extends Component {
                     <div className="modal-body">
                       <h4>Authentication Policy</h4>
                       <p>According to Instagram's API Authentication Policy, it is required to login with your Instagram account to start using this app. </p>
-                      <a href="http://www.supercarsta.com/oauth/instagram" className="button button-large button-dirtygreen btn-block center"><i className="icon-instagram"></i><span>Login with Instagram</span></a>
+                      <a href="#" onClick={this.handleClick} className="button button-large button-dirtygreen btn-block center"><i className="icon-instagram"></i><span>Login with Instagram</span></a>
                     </div>
                   </div>
                 </div>

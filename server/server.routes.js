@@ -6,7 +6,19 @@ module.exports = function() {
   var router = express.Router();
   var index = require('./controllers/indexController');
 
-  router.get('/',index.render);
+  router.get('/',function(req,res){
+    if(!req.user){
+      res.render('index', {
+        page: 'Home',
+        user: req.user
+      });
+    }else{
+      res.render('index', {
+        page: 'Home',
+        user: req.user
+      });
+    };
+  });
 
   router.get('/oauth/instagram', passport.authenticate('instagram'));
 
@@ -15,8 +27,8 @@ module.exports = function() {
   function(req, res) {
     // Successful authentication, redirect home.
     console.log(JSON.stringify(req.user)+"~~~~~~~~~~~~~~~~~~user");
-    res.json(JSON.stringify(req.user));
-    //res.redirect('/');
+    //res.json(JSON.stringify(req.user));
+    res.redirect('/');
   });
 
   /*router.get('/callback',function(req, res){

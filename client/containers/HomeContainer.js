@@ -11,28 +11,11 @@ export default class HomeContainer extends Component {
   }
 
   render() {
-    const { brand } = this.props
-    console.log(brand)
     return(
     <div>
       <Landing/>
-      <BrandTable chooseBrand={chooseBrand} />
+      <BrandTable />
     </div>
   )
   }
 }
-
-HomeContainer.propTypes = {
-  brand: PropTypes.string
-}
-
-function mapStateToProps(state) {
-  return {
-    brand: state.brand
-  }
-}
-
-export default connect(
-  mapStateToProps,
-  chooseBrand
-)(HomeContainer)

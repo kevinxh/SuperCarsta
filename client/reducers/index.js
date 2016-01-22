@@ -2,18 +2,22 @@ import * as types from '../constants/ActionTypes'
 import { routerStateReducer as router } from 'redux-router'
 import { combineReducers } from 'redux'
 
-function brand(state = { brand: "none" }, action) {
+function auth(state = { 
+	username : "unknown",
+	token : "unknown" }, action) {
   switch (action.type) {
-    case types.CHOOSE_BRAND:
-      return action.brand
-
+    case types.LOGIN:
+      return {
+      	username: action.username,
+      	token: action.token
+      }
     default:
       return state
   }
 }
 
 const rootReducer = combineReducers({
-  brand,
+  auth,
   router
 })
 

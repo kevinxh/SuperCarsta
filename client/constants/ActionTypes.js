@@ -1,1 +1,1 @@
-export const CHOOSE_BRAND = 'CHOOSE_BRAND'
+export const LOGIN = 'LOGIN'
