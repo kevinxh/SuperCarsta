@@ -9,13 +9,13 @@ module.exports = function() {
 
   router.get('/',function(req,res){
     if(!req.user){
-      res.render('index', {
+      res.render('auth/index', {
         page: 'Home',
         cars: cars,
         user: req.user
       });
     }else{
-      res.render('index', {
+      res.render('auth/index', {
         page: 'Home',
         cars: cars,
         user: req.user
@@ -23,10 +23,10 @@ module.exports = function() {
     };
   });
 
-  router.get('/oauth/instagram', passport.authenticate('instagram'));
+  router.get('/oauth/instagram', passport.authenticate('instagram' , { scope: ['public_content'] }));
 
   router.get('/callback', 
-  passport.authenticate('instagram', { failureRedirect: '/' }),
+  passport.authenticate('instagram',{ scope: ['public_content'] }),
   function(req, res) {
     res.redirect('/');
   });

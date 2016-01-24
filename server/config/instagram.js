@@ -18,7 +18,7 @@ module.exports = function() {
 		callbackURL : 'http://www.supercarsta.com/callback'
 	},
 	function(accessToken, refreshToken, profile, done) {
-		console.log(profile._json.data,'!!!!!!!!!!!!!!!!!\n');
+		console.log(accessToken,'!!!!!!!!!!!!!!!!!\n');
 		var userInfo = {
 			user_token: accessToken,
 			user_name:profile.username,
