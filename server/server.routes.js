@@ -15,11 +15,7 @@ module.exports = function() {
         user: req.user
       });
     }else{
-      res.render('auth/index', {
-        page: 'Home',
-        cars: cars,
-        user: req.user
-      });
+      res.render('app/index');
     };
   });
 
