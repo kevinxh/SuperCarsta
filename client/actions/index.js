@@ -1,6 +1,23 @@
 import fetch from 'isomorphic-fetch'
 import * as types from '../constants/ActionTypes'
 
-export function login() {
-  return { type: types.LOGIN }
+export function userRequest() {
+  return { type: types.USER_REQUEST }
+}
+
+export function userRecieve(userInfo) {
+	console.log('\nAction creater (userRecieve): ',userInfo);
+  return { 
+  	type: types.USER_RECIEVE,
+  	userInfo
+  }
+}
+
+export function fetchUser() {
+  return dispatch => {
+    dispatch(userRequest())
+    return fetch('http://www.supercarsta.com/user')
+      .then(req => req.json())
+      .then(json => dispatch(userRecieve(json)))
+  }
 }

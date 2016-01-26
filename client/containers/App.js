@@ -1,20 +1,26 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { pushState } from 'redux-router'
-import Header from '../components/Header'
-import { resetErrorMessage } from '../actions'
+import { fetchUser } from '../actions'
 
 class App extends Component {
 
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    const { dispatch } = this.props
+    dispatch(fetchUser())
+  }
+
   render() {
-    const { children } = this.props
+    const { userInfo, isFetching } = this.props
     return (
       <div>
-        <Header/>
         <section id="content">
           <div className="content-wrap">
             <div className="container clearfix">
-              {children}
+            {userInfo} .. {isFetching}
             </div>
           </div>
         </section>
@@ -24,21 +30,16 @@ class App extends Component {
 }
 
 App.propTypes = {
-  // Injected by React Redux
-  errorMessage: PropTypes.string,
-  resetErrorMessage: PropTypes.func.isRequired,
-  pushState: PropTypes.func.isRequired,
-  // Injected by React Router
-  children: PropTypes.node
+  isFetching: PropTypes.bool.isRequired,
+  userInfo: PropTypes.object.isRequired,
 }
 
 function mapStateToProps(state) {
+  const { isFetching, userInfo } = state
   return {
-    errorMessage: state.errorMessage,
+    isFetching,
+    userInfo
   }
 }
 
-export default connect(mapStateToProps, {
-  resetErrorMessage,
-  pushState
-})(App)
+export default connect(mapStateToProps)(App)

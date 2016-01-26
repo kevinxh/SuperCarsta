@@ -31,5 +31,15 @@ module.exports = function() {
     req.logout();
     res.redirect('/');
   });
+
+  router.get('/user', function(req, res){
+    console.log("\n/user API call", req);
+    if(req.user){
+      res.json({userInfo: req.user});
+    }else{
+      res.json({error: "You are not logged in!"})
+    };
+  });
+
   return router;
 };
