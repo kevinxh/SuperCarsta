@@ -2,7 +2,10 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { fetchUser } from '../actions'
 import Header from '../components/Header'
+import Landing from '../components/Landing'
+import BrandTable from '../components/BrandTable'
 import UserModal from '../components/UserModal'
+import Footer from '../components/Footer'
 
 class App extends Component {
 
@@ -22,11 +25,14 @@ class App extends Component {
       <div>
         <Header userName={userInfo.user_name}/>
         <section id="content">
-          <div className="content-wrap">
+          <div className="content-wrapper">
             <div className="container clearfix">
+              <Landing />
+              {this.props.children}
             </div>
           </div>
         </section>
+        <Footer />
         <UserModal userName={userInfo.user_name} userBio={userInfo.user_bio} userPic={userInfo.user_picture}/>
       </div>
     )

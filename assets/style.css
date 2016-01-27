@@ -13,6 +13,10 @@
 	text-transform:uppercase;
 }
 
+.footer_bg{
+	background: url('/images/footer-bg.jpg') repeat fixed; 
+	background-size: 100% 100%;
+}
 
 
 

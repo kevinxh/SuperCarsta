@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import { Link } from 'react-router'
 
 export default class Brands extends Component {
   render() {
@@ -12,6 +11,5 @@ export default class Brands extends Component {
 Brands.propTypes = {
   onClick: PropTypes.func.isRequired,
   name : PropTypes.string.isRequired,
-  link : PropTypes.string.isRequired,
   logo : PropTypes.string.isRequired
 }

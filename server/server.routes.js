@@ -39,8 +39,7 @@ module.exports = function() {
         user_id: req.user.user_id,
         user_name: req.user.user_name,
         user_picture: req.user.user_picture,
-        user_counts: req.user.user_counts,
-        user_token: req.user.user_token
+        user_counts: req.user.user_counts
       });
     }else{
       res.json({error: "You are not logged in!"})

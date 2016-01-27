@@ -1,5 +1,5 @@
 import * as types from '../constants/ActionTypes'
-import { routerStateReducer as router } from 'redux-router'
+import routeReducer from 'react-router-redux'
 import { combineReducers } from 'redux'
 
 function user(state = { 
@@ -20,9 +20,9 @@ function user(state = {
   }
 }
 
-const rootReducer = combineReducers({
+const rootReducer = combineReducers(
   user,
-  router
-})
+  routeReducer
+)
 
 export default rootReducer
