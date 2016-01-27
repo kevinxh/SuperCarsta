@@ -6,7 +6,7 @@ export function userRequest() {
 }
 
 export function userRecieve(userInfo) {
-	console.log('\nAction creater (userRecieve): ',userInfo);
+  console.log("userInfo!:",userInfo)
   return { 
   	type: types.USER_RECIEVE,
   	userInfo

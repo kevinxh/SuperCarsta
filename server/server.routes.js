@@ -34,7 +34,14 @@ module.exports = function() {
 
   router.get('/user', function(req, res){
     if(req.user){
-      res.json({userInfo: req.user});
+      res.json({
+        user_bio: req.user.user_bio,
+        user_id: req.user.user_id,
+        user_name: req.user.user_name,
+        user_picture: req.user.user_picture,
+        user_counts: req.user.user_counts,
+        user_token: req.user.user_token
+      });
     }else{
       res.json({error: "You are not logged in!"})
     };

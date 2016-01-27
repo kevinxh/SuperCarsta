@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { fetchUser } from '../actions'
+import Header from '../components/Header'
 
 class App extends Component {
 
@@ -15,8 +16,10 @@ class App extends Component {
 
   render() {
     const { userInfo, isFetching } = this.props
+    console.log("username: ", userInfo.user_name)
     return (
       <div>
+        <Header userName={userInfo.user_name}/>
         <section id="content">
           <div className="content-wrap">
             <div className="container clearfix">
