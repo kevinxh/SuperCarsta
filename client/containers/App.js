@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { fetchUser } from '../actions'
 import Header from '../components/Header'
+import UserModal from '../components/UserModal'
 
 class App extends Component {
 
@@ -26,6 +27,7 @@ class App extends Component {
             </div>
           </div>
         </section>
+        <UserModal userName={userInfo.user_name} userBio={userInfo.user_bio} userPic={userInfo.user_picture}/>
       </div>
     )
   }
