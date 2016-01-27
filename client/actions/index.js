@@ -16,8 +16,9 @@ export function userRecieve(userInfo) {
 export function fetchUser() {
   return dispatch => {
     dispatch(userRequest())
-    return fetch('http://www.supercarsta.com/user')
-      .then(req => req.json())
+    return fetch('http://www.supercarsta.com/user',{
+      credentials:'same-origin'
+    }).then(req => req.json())
       .then(json => dispatch(userRecieve(json)))
   }
 }

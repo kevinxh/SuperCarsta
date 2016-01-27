@@ -20,7 +20,6 @@ class App extends Component {
         <section id="content">
           <div className="content-wrap">
             <div className="container clearfix">
-            {userInfo} .. {isFetching}
             </div>
           </div>
         </section>
@@ -31,11 +30,11 @@ class App extends Component {
 
 App.propTypes = {
   isFetching: PropTypes.bool.isRequired,
-  userInfo: PropTypes.object.isRequired,
+  userInfo: PropTypes.object.isRequired
 }
 
 function mapStateToProps(state) {
-  const { isFetching, userInfo } = state
+  const { isFetching, userInfo } = state.user
   return {
     isFetching,
     userInfo

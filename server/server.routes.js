@@ -33,7 +33,6 @@ module.exports = function() {
   });
 
   router.get('/user', function(req, res){
-    console.log("\n/user API call", req);
     if(req.user){
       res.json({userInfo: req.user});
     }else{
