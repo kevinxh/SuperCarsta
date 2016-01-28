@@ -1,9 +1,14 @@
 import React, { Component, PropTypes } from 'react'
+import { Link } from 'react-router'
 
 export default class Brands extends Component {
   render() {
     return (
-        <li><a href={`/${this.props.name}`} onClick={this.props.onClick(this.props.name)}><img src={this.props.logo} alt={this.props.name}/></a></li>
+        <li>
+        	<Link to={`/${this.props.name}`} onClick={this.props.onClick(this.props.name)}>
+        		<img src={this.props.logo} alt={this.props.name}/>
+        	</Link>
+        </li>
     )
   }
 }

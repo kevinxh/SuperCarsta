@@ -19,6 +19,19 @@ module.exports = function() {
     };
   });
 
+  //testing routing
+  router.get('/Acura',function(req,res){
+    if(!req.user){
+      res.render('auth/index', {
+        page: 'Home',
+        cars: cars,
+        user: req.user
+      });
+    }else{
+      res.render('app/index');
+    };
+  });
+
   router.get('/oauth/instagram', passport.authenticate('instagram' , { scope: ['public_content'] }));
 
   router.get('/callback', 

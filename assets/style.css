@@ -3429,7 +3429,10 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	padding: 80px 0;
 }
 
-#content .container { position: relative; }
+#content .container { 
+	position: relative;
+	padding-bottom: 50px;
+}
 
 
 /* ----------------------------------------------------------------

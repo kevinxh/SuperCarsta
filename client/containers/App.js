@@ -20,7 +20,6 @@ class App extends Component {
 
   render() {
     const { userInfo, isFetching } = this.props
-    console.log("username: ", userInfo.user_name)
     return (
       <div>
         <Header userName={userInfo.user_name}/>

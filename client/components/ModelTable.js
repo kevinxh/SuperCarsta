@@ -9,7 +9,8 @@ export default class ModelTable extends Component {
   }
 
   render() {
-    const { brand } = this.props
+    const { brand } = this.props.params
+    console.log(brand)
     return (
       <div className="fullwidth">
       <ul className="clients-grid grid-4 nobottommargin clearfix">
@@ -29,8 +30,4 @@ export default class ModelTable extends Component {
     </div>
     )
   }
-}
-
-ModelTable.propTypes = {
-    brand: PropTypes.string.isRequired
 }

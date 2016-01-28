@@ -1,10 +1,10 @@
 import 'babel-core/polyfill'
 import React from 'react'
-import { render } from 'react-dom'
+import ReactDOM from 'react-dom'
 import Root from './containers/Root'
 
 
-render(
+ReactDOM.render(
   <Root />,
   document.getElementById('root')
 )

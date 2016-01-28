@@ -32,7 +32,7 @@ export const BrandList = [
             },
             {
               "name": "DB9",
-              "pic": "images/models/aston_martin/Db9.jpg"
+              "pic": "images/models/aston_martin/db9.jpg"
             },
             {
               "name": "Vulcan",
