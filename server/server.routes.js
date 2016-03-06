@@ -1,7 +1,8 @@
 var express = require('express');
 var request = require('request');
 var passport = require('passport');
-var cars = require('./models/cars')
+var request = require('request');
+var cars = require('./models/cars');
 
 module.exports = function() {
   var router = express.Router();
@@ -56,6 +57,24 @@ module.exports = function() {
       });
     }else{
       res.json({error: "You are not logged in!"})
+    };
+  });
+
+  router.get('/test', function(req, res){
+
+    if(req.user){
+    	request('https://api.instagram.com/v1/users/self/media/recent?count=10&access_token='+req.user.user_token, function (error, response, body) {
+			if (!error && response.statusCode == 200) {
+				console.log(JSON.stringify(JSON.parse(body),null,2) );
+				res.json(JSON.stringify(JSON.parse(body),null,2));
+			}else{
+				console.log(error);
+				res.json({msg: "api error!"})
+			}
+		});
+    	
+    }else{
+      res.json({error: "You are not logged in!"});
     };
   });
 
